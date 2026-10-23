@@ -128,5 +128,31 @@
     "poster": "10.jpg",
     "title": "Pop Star · Golden Hair",
     "description": "Black-and-white outfit / Backstage embrace"
+  },
+  {
+    "id": 11,
+    "group": 4,
+    "original": "b229ed31e8e3c12c134486aebb6542b9.mp4",
+    "src": "11.mp4",
+    "poster": "11.jpg",
+    "size": 14410454,
+    "duration": 20.6,
+    "width": 1080,
+    "height": 1920,
+    "title": "Only You · Japanese Version",
+    "description": "Japanese dialogue / A jealous confession"
+  },
+  {
+    "id": 12,
+    "group": 4,
+    "original": "fbe380e5f243fc1bf9662fea8bad7e93.mp4",
+    "src": "12.mp4",
+    "poster": "12.jpg",
+    "size": 14969387,
+    "duration": 20.62,
+    "width": 1080,
+    "height": 1920,
+    "title": "Only You · Korean Version",
+    "description": "Korean dialogue / A jealous confession"
   }
 ]

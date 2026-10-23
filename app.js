@@ -1,4 +1,4 @@
-const groups=[{id:1,title:'Signing Event',english:'THE SIGNING EVENT',description:'Meet the man from your story, just across the table.',count:4},{id:2,title:'After Midnight',english:'AFTER MIDNIGHT',description:'Late nights. Quiet words. An opening line just for you.',count:3},{id:3,title:'Pop Star Boyfriend',english:'THE POP STAR',description:'From the spotlight to a world made for two.',count:3}];
+const groups=[{id:1,title:'Signing Event',english:'THE SIGNING EVENT',description:'Meet the man from your story, just across the table.',count:4},{id:2,title:'After Midnight',english:'AFTER MIDNIGHT',description:'Late nights. Quiet words. An opening line just for you.',count:3},{id:3,title:'Pop Star Boyfriend',english:'THE POP STAR',description:'From the spotlight to a world made for two.',count:3},{id:4,title:'Only You',english:'ONLY YOU',description:'A quiet evening. A jealous confession. Two versions of the same story.',count:2}];
 const pad=n=>String(n).padStart(2,'0');
 const formatTime=t=>`${Math.floor(t/60)}:${pad(Math.round(t)%60)}`;
 const videos=window.GALLERY_DATA;
@@ -15,7 +15,7 @@ function openVideo(id){
  const download=document.getElementById('download');download.href=v.src;download.download=`${pad(v.id)}-${v.title}.mp4`;
  document.getElementById('playlist-count').textContent=pad(group.count);
  document.getElementById('playlist').innerHTML=videos.filter(x=>x.group===v.group).map(x=>`<button class="playlist-item ${x.id===v.id?'selected':''}" data-video="${x.id}" ${x.id===v.id?'aria-current="true"':''}><img src="${x.poster}" alt=""><span>${x.title}<small>${formatTime(x.duration)} ${x.id===v.id?' · Now playing':''}</small></span></button>`).join('');
- document.getElementById('position').textContent=`${pad(current+1)} / 10`;document.getElementById('previous').disabled=current===0;document.getElementById('next').disabled=current===videos.length-1;
+ document.getElementById('position').textContent=`${pad(current+1)} / ${pad(videos.length)}`;document.getElementById('previous').disabled=current===0;document.getElementById('next').disabled=current===videos.length-1;
  if(!dialog.open){dialog.showModal();document.body.style.overflow='hidden'}
  player.play().catch(e=>{if(e.name!=='AbortError')status.textContent='Press play on the video to start watching.'});
 }
