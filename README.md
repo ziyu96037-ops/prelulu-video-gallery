@@ -1,6 +1,6 @@
 # PRELULU Video Collection
 
-Fourteen videos in five series: Signing Event (4), After Midnight (3), Pop Star Boyfriend (3), Only You (2), and Care on the Way Home (2).
+Sixteen videos in five series: Signing Event (4), After Midnight (3), Pop Star Boyfriend (3), Only You (2), and Care on the Way Home (4).
 
 Care on the Way Home includes A Warm Drink (Korean dialogue), followed by Under One Umbrella (Japanese dialogue), in the supplied order.
 
@@ -9,3 +9,5 @@ English static website with H.264/AAC MP4 videos. All files are at the repositor
 Publish using GitHub Pages from the main branch root. Visitors do not need an account.
 
 Existing website address: https://ziyu96037-ops.github.io/prelulu-video-gallery/
+
+New videos: Warm Hands (Korean dialogue) and A Drink for Two (Japanese dialogue).
